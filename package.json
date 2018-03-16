@@ -15,7 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/balbinotmichele/google-translate-bot.git"
   },
-  "author": "Michele Balbinot",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/balbinotmichele/google-translate-bot/issues"
