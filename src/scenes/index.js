@@ -18,5 +18,5 @@ const {resolve} = require('path')
     });
 
 
-scenes.landingScene = 'menu';
+scenes.landingScene = 'settings';
 module.exports = scenes;

@@ -1,4 +1,3 @@
-/*global require,__dirname,module,console*/
 const path = require('path')
 , Telegraf = require('telegraf')
 , session = require(path.resolve(__dirname, 'session'))
@@ -19,5 +18,4 @@ module.exports = scenes.then(theScenes => {
     console.info(`Moving user to ${scenes.landingScene} scene`);
     return await ctx.scene.enter(scenes.landingScene); //invia user sulla scena landingScene
   });
-})
-.then(() => bot);
+}).then(() => bot);
