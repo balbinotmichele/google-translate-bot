@@ -1,0 +1,24 @@
+{
+  "name": "google-translate-bot",
+  "version": "1.0.0",
+  "description": "Bot Telegram translator (using GTranslate API)",
+  "main": "index.js",
+  "dependencies": {
+    "google-translate-api": "^2.3.0",
+    "telegraf": "^3.19.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balbinotmichele/google-translate-bot.git"
+  },
+  "author": "Michele Balbinot",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/balbinotmichele/google-translate-bot/issues"
+  },
+  "homepage": "https://github.com/balbinotmichele/google-translate-bot#readme"
+}
