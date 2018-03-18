@@ -23,9 +23,6 @@ module.exports = Scene => {
   });
 
   index.on('text', (ctx) => {
-    console.log(ctx.session.from[0]);
-    console.log(ctx.session.to[0]);
-    console.log(ctx.message);
     Translate(ctx.message.text, {from: Languages.getCode(ctx.session.from[0]), to: Languages.getCode(ctx.session.to[0])}).then(res => {
         ctx.reply(res.text);
     }).catch(err => {
