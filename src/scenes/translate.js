@@ -27,8 +27,6 @@ module.exports = Scene => {
     console.log(ctx.session.to[0]);
     console.log(ctx.message);
     Translate(ctx.message.text, {from: Languages.getCode(ctx.session.from[0]), to: Languages.getCode(ctx.session.to[0])}).then(res => {
-        console.log(res.text);
-        console.log(res.from.language.iso);
         ctx.reply(res.text);
     }).catch(err => {
         console.error(err);
