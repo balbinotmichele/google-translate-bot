@@ -16,8 +16,12 @@ module.exports = Scene => {
 
   index.enter(ctx => {
     console.info(`Serving menu to ${ctx.session.username}`);
-
     ctx.reply('Select the language of the translation', sceneKeyboard);
+  });
+
+  index.hears('🔙 Back', async ctx => {
+    await index.leave();  
+    await ctx.scene.enter('settings');
   });
 
   sceneMenu.forEach(elm => { //setta l'ingresso in ogni scena
