@@ -11,6 +11,8 @@ module.exports = Scene => {
 
   index.enter(ctx => {
     console.info(`Serving menu to ${ctx.session.username}`);
+    ctx.session.from = 'Automatic';
+    ctx.session.to = 'English';
     //console.log(sceneMenu)
     ctx.reply('Select the languages for the translation and click "Translate" \n\nSelected text language ' + ctx.session.from + '\nSelected translation language ' + ctx.session.to, sceneKeyboard);
   });
