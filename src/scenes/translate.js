@@ -6,7 +6,7 @@ const To = require('./to.js');
 
 module.exports = Scene => {
   const index = new Scene('translate')
-    , sceneMenu = ['<-- Back']
+    , sceneMenu = ['🔙 Back']
     , sceneKeyboard = Markup
       .keyboard(sceneMenu)
       .resize()
