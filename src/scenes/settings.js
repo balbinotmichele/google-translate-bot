@@ -1,7 +1,6 @@
 const Markup = require('telegraf/markup');
 const Languages = require ('google-translate-api/languages');
 
-let trans_from;
 module.exports = Scene => {
   const index = new Scene('settings')
     , sceneMenu = [['Text language'], ['Translation language'], ['Translate']]
