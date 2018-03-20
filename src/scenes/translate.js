@@ -17,7 +17,7 @@ module.exports = Scene => {
     ctx.reply('Write your text', sceneKeyboard);
   });
 
-  index.hears('<-- Back', async ctx => {
+  index.hears('🔙 Back', async ctx => {
     await index.leave();  
     await ctx.scene.enter('settings');
   });
