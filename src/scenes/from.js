@@ -4,7 +4,7 @@ const Languages = require ('google-translate-api/languages');
 let trans_from;
 module.exports = Scene => {
   let lang = Array.from(Object.values(Languages.langs), x => [x]);
-  lang.splice(0, 0, "🔙 Back");
+  lang.splice(0, 0, ["🔙 Back"]);
 
   const index = new Scene('from')
     , sceneMenu = lang

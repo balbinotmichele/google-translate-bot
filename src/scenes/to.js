@@ -5,7 +5,7 @@ let trans_to;
 
 module.exports = Scene => {
   let lang = Array.from(Object.values(Languages.langs), x => [x]).slice(1);
-  lang.splice(0, 0, "🔙 Back");
+  lang.splice(0, 0, ["🔙 Back"]);
 
   const index = new Scene('to')
     , sceneMenu = lang
