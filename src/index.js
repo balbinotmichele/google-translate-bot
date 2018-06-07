@@ -2,7 +2,7 @@ const path = require('path')
 , Telegraf = require('telegraf')
 , session = require(path.resolve(__dirname, 'session'))
 , scenes = require(path.resolve(__dirname, 'scenes'))
-, bot = new Telegraf("502888130:AAFsqUZj11Hb65VKjLe90g8OXAFpQBRLo5I");
+, bot = new Telegraf("BOT_TOKEN");
 
 console.info('Instantiating bot...');
 bot.use(session);
